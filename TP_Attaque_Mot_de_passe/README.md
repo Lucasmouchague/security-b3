@@ -65,6 +65,10 @@ Nous avons écris un script qui réalise une attaque par bruteforce en python, c
 
 Voici la liste de caractère utilisé : 
 
+```
+abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789&é"'(-è_çà;!:_
+```
+
 Lorsque l'on a lancé le script on a plus qu'a aller chercher un bon café et a attendre le résultat de celui ci, 
 
 il va écrire dans le fichier out.txt les résultats qu'il aura trouvé. 
