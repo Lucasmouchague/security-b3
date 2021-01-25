@@ -31,6 +31,7 @@ Avec la troisième on rejete par défaut tout le trafic entrant
 Avec la dernière on accepte le traffic entrant sur le port 22
 ## Script:
 Le script va se charger d'abord créer les groupes puis les utilisateur avec un mot de passe de 22 caractères et leur biclef avec une passphrase de 35 caractères puis il va assigner les utilisateurs a leurs groupes respectifs
+![image1](https://raw.githubusercontent.com/Lucasmouchague/security-b3/main/TP_GIA_droit_linux/script.PNG?token=AKLGECVIOLTT5GXVQZUDER3AC7CZK)
 ```
 [nawak@Host-002 ~]$ sudo bash script.sh 
 [sudo] password for nawak: 
@@ -123,4 +124,6 @@ rm: cannot remove ‘/etc/subgid.lock’: No such file or directory
 [!] All folder created
 ```
 On peut vérifier alors les groupes avec la commande: ```cat /etc/group```
+![image2](https://raw.githubusercontent.com/Lucasmouchague/security-b3/main/TP_GIA_droit_linux/group.PNG?token=AKLGECU3KTQBCIADSC6IRJTAC7C24)
 On va vérifier la génération des biclef
+![image3](https://raw.githubusercontent.com/Lucasmouchague/security-b3/main/TP_GIA_droit_linux/biclef.PNG?token=AKLGECSSMU5PFI7RNNQG7NLAC7C4I)
