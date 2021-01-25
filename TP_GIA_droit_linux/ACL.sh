@@ -92,17 +92,19 @@ ACL_start() {
 	# ACL - C2-4 Production (ACL pour la production dans la catégorie Commun)
 
 	setfacl -m g:Direction:rx,g:Service_Comptable:rx,g:Service_Informatique:rx,g:Service_Logistique:rx,u:Edouard-Franck_Wagner:rx,u:Alexandra_Met:rx,u:Claude_Muller:rx,u:Gabriel_Benard:rwx /partage/C2-Commun/C2-4-Production/
+	echo -e "ACL applied"
 }
 
 
 ACL_check() {
-	ls -al -R /partage
+	getfacl -R /partage/
 }
 
 ACL_delete() {
 
 	setfacl -b -R /partage/
 	chmod g=rwx /partage/
+	echo -e "ACL Deleted"
 
 }
 
@@ -116,7 +118,7 @@ ACL_start
 ACL_check
 ;;
 
-'delete'
+'delete')
 ACL_delete
 ;;
 
