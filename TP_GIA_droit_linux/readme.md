@@ -135,3 +135,5 @@ Et la création des répertoires:
 
 
 ![image4](https://raw.githubusercontent.com/Lucasmouchague/security-b3/main/TP_GIA_droit_linux/tree.PNG?token=AKLGECTDU4RI2KALUWA36CLAC7DUE)
+### ACL
+Nous avons créer un [script](https://github.com/Lucasmouchague/security-b3/blob/main/TP_GIA_droit_linux/ACL.sh) pour mettre en place les ACLs décrite dans les documents du TP
