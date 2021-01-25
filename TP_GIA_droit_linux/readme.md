@@ -125,6 +125,7 @@ rm: cannot remove ‘/etc/subgid.lock’: No such file or directory
 ```
 On peut vérifier alors les groupes avec la commande: ```cat /etc/group```
 ![image2](https://raw.githubusercontent.com/Lucasmouchague/security-b3/main/TP_GIA_droit_linux/group.PNG?token=AKLGECU3KTQBCIADSC6IRJTAC7C24)
+
 On va vérifier la génération des biclef:
 
 
