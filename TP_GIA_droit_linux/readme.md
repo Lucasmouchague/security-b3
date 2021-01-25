@@ -120,5 +120,7 @@ rm: cannot remove ‘/etc/subgid.lock’: No such file or directory
 [!] Set user Honore_Adler to service logistique group
 
 
- [!] All folder created
+[!] All folder created
 ```
+On peut vérifier alors les groupes avec la commande: ```cat /etc/group```
+On va vérifier la génération des biclef
