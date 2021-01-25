@@ -60,6 +60,7 @@ for group in "${groups[@]}"; do
 done
 
 for user in "${users[@]}"; do
+    echo -e '-------------------------------------------------------------------------------'
     password=$(cat /dev/urandom | tr -cd 'a-zA-Z0-9!#&' | head -c 22; echo)
     sudo useradd -m "$user"
     echo -e "$password\n$password" | sudo passwd $user >& /dev/null
@@ -67,30 +68,35 @@ for user in "${users[@]}"; do
     mkdir /home/$user/.ssh
     passphrase=$(cat /dev/urandom | tr -cd 'a-zA-Z0-9!#&' | head -c 35; echo)
     ssh-keygen -b 2048 -t rsa -f /home/$user/.ssh/sshkey -q -P "$passphrase" >& /dev/null
-    echo -e "[!] Generated ssh key for $user with passphrase : $passphrase \n\n"
+    echo -e "[!] Generated ssh key for $user with passphrase : $passphrase "
 done
 
 for direction_user in "${direction_users[@]}"; do
+    echo -e '-------------------------------------------------------------------------------'
     echo "[!] Set user $direction_user to direction group"
     sudo usermod -aG Direction "$direction_user"
 done
 
 for pilotage_user in "${pilotage_users[@]}"; do
+    echo -e '-------------------------------------------------------------------------------'
     echo "[!] Set user $pilotage_user to pilotage group"
     sudo usermod -aG Pilotage "$pilotage_user"
 done
 
 for service_comptable_user in "${service_comptable_users[@]}"; do
+    echo -e '-------------------------------------------------------------------------------'
     echo "[!] Set user $service_comptable_user to service comptable group"
     sudo usermod -aG Service_Comptable "$service_comptable_user"
 done
 
 for service_informatique_user in "${service_informatique_users[@]}"; do
+    echo -e '-------------------------------------------------------------------------------'
     echo "[!] Set user $service_informatique_user to service informatique group"
     sudo usermod -aG Service_Informatique "$service_informatique_user"
 done
 
 for service_logistique_user in "${service_logistique_users[@]}"; do
+    echo -e '-------------------------------------------------------------------------------'
     echo "[!] Set user $service_logistique_user to service logistique group"
     sudo usermod -aG Service_Logistique "$service_logistique_user"
 done
