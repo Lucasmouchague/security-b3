@@ -138,3 +138,8 @@ Et la création des répertoires:
 ### ACL
 Nous avons créer un [script](https://github.com/Lucasmouchague/security-b3/blob/main/TP_GIA_droit_linux/ACL.sh) pour mettre en place les ACLs décrite dans les documents du TP
 ![image5](https://raw.githubusercontent.com/Lucasmouchague/security-b3/main/TP_GIA_droit_linux/acl.PNG?token=AKLGECSHGHFIM2FOSOALNCLADAI64)
+
+
+Ce script permet d'effacer les ACL, 
+de faire un check des ACL mis en place et de les créer si elles ne sont pas créer.
+Cela permet d'éviter de retaper les même commandes tout le temps
