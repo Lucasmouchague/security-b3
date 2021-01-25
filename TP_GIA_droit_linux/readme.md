@@ -130,3 +130,5 @@ On va vérifier la génération des biclef:
 
 ![image3](https://raw.githubusercontent.com/Lucasmouchague/security-b3/main/TP_GIA_droit_linux/biclef.PNG?token=AKLGECSSMU5PFI7RNNQG7NLAC7C4I)
 Et la création des répertoires:
+
+![image4](https://raw.githubusercontent.com/Lucasmouchague/security-b3/main/TP_GIA_droit_linux/tree.PNG?token=AKLGECTDU4RI2KALUWA36CLAC7DUE)
